@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quizApp.css">
+</head>
+<body>
+    <div class="quiz">
+        <div class="start">
+            <div class="header">
+                <h5>(<span id="nbQuestions">0</span>of 5)</h5>
+                <h4>MC Quiz</h4>
+            </div>
+            <div class="time">
+                <h4>Total Time : <br>(00 : <span id="timeRest">00</span>)</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="body">
+            <h2>HTML & CSS Basics MCQ's</h2>
+            <p id="text">You will get 5 point for each correct answer, At the end of the Quiz , your total score will be displayed .Maximum score is 25 point.</p>
+            <div id="start">
+                <button class="play">Start the quiz</button>
+            </div>
+            <button class="question" id="option1"></button>
+            <button class="question" id="option2"></button>
+            <button class="question" id="option3"></button>
+            <button class="question" id="option4"></button>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="butt">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+                <br><br>
+            </div>
+            <button id="end">Finish</button>
+        </div>
+        <div class="resPage">
+            <p>Marks: <span id="marks">0</span>/25</p>
+            <h3><span id="score">0</span> correct out of 5</h3>
+            <h3>Result: <span id="pour">0%</span></h3>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+    <script src="quizApp.js"></script>
+</body>
+</html>
